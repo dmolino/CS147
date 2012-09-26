@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-webapp-status-bar-style" content="grey" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		<title>MyApp</title>
 	</head>
 	
@@ -14,6 +19,26 @@
 			font-weight:300;
 			color:#aaa;
 		}
+
+		.class1{
+			color:blue;
+		}
+
+		#bio{
+			color:red;
+		}
+
+		.button{
+			background:#333;
+			width:100px;
+			color:#fff;
+			height:20px;
+		     -moz-border-radius: 20px;
+		    -webkit-border-radius: 20px;
+		    -khtml-border-radius: 20px;
+		    border-radius: 20px;
+		    text-align:center;
+		}
 	</style>
 	
 	<body>
@@ -22,15 +47,20 @@
 	 
 	 	<h3>Assignments</h3>
 		<ul id='assignments'>
-			<li>Go undercover</li>
-			<li>Learn HTML</li>
+			<li class="class1">Go undercover</li>
+			<li class="class1">Learn HTML</li>
 		</ul>
 	
 		<h3>A nice button</h3>
+		<p class="button">Click Me!</p>
 
 		<h3>An invisible seal</h3>
+		<p><img width="50" class="opacity" src="seal.png" /></p>
 
 		<h3>A video</h3>
+		<video width="300" height="240" controls="controls">
+		  <source src="gizmo.mp4" type="video/mp4" />
+		</video>
 
 		<h3>Two boxes side by side</h3>
 
